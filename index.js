@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
     console.log('starting the ');
     res.send('send request');
 });
+app.get('/hello', (req, res) => {
+    console.log('starting the hello');
+    res.send('send request hello');
+});
 
 async function run() {
     try {
